@@ -36,15 +36,14 @@ public partial class ProjectWebScrapingContext : DbContext
     {
         modelBuilder.Entity<Categoria>(entity =>
         {
-            entity.HasKey(e => e.IdCategoria).HasName("PK__Categori__A3C02A1069217585");
+            entity.HasKey(e => e.IdCategoria).HasName("PK__Categori__A3C02A10C40A402F");
 
-            entity.Property(e => e.IdCategoria).ValueGeneratedNever();
             entity.Property(e => e.Descripcion).HasMaxLength(100);
         });
 
         modelBuilder.Entity<ListaGuardado>(entity =>
         {
-            entity.HasKey(e => new { e.IdVideoGenerado, e.IdUsuario }).HasName("PK__Lista_Gu__A244C8B2EAEDFC1E");
+            entity.HasKey(e => new { e.IdVideoGenerado, e.IdUsuario }).HasName("PK__Lista_Gu__A244C8B23BD2CF6E");
 
             entity.ToTable("Lista_Guardado");
 
@@ -71,27 +70,24 @@ public partial class ProjectWebScrapingContext : DbContext
 
         modelBuilder.Entity<TipoGuardado>(entity =>
         {
-            entity.HasKey(e => e.IdTipoGuardado).HasName("PK__TipoGuar__D1EF3D69A4F037AF");
+            entity.HasKey(e => e.IdTipoGuardado).HasName("PK__TipoGuar__D1EF3D69BA3B67BF");
 
-            entity.Property(e => e.IdTipoGuardado).ValueGeneratedNever();
             entity.Property(e => e.Descripcion).HasMaxLength(100);
         });
 
         modelBuilder.Entity<TipoUsuario>(entity =>
         {
-            entity.HasKey(e => e.IdTipoUsuario).HasName("PK__TipoUsua__CA04062BD9220D13");
+            entity.HasKey(e => e.IdTipoUsuario).HasName("PK__TipoUsua__CA04062B54B0BF98");
 
-            entity.Property(e => e.IdTipoUsuario).ValueGeneratedNever();
             entity.Property(e => e.Descripcion).HasMaxLength(100);
         });
 
         modelBuilder.Entity<Usuario>(entity =>
         {
-            entity.HasKey(e => e.IdUsuario).HasName("PK__Usuario__5B65BF97E86AF5C6");
+            entity.HasKey(e => e.IdUsuario).HasName("PK__Usuario__5B65BF97965ED82D");
 
-            entity.HasIndex(e => e.Email, "UQ__Usuario__A9D105345F750B73").IsUnique();
+            entity.HasIndex(e => e.Email, "UQ__Usuario__A9D105340EA64196").IsUnique();
 
-            entity.Property(e => e.IdUsuario).ValueGeneratedNever();
             entity.Property(e => e.Apellidos).HasMaxLength(100);
             entity.Property(e => e.Email).HasMaxLength(100);
             entity.Property(e => e.Estado).HasMaxLength(20);
@@ -113,9 +109,8 @@ public partial class ProjectWebScrapingContext : DbContext
 
         modelBuilder.Entity<VideoGenerado>(entity =>
         {
-            entity.HasKey(e => e.IdVideoGenerado).HasName("PK__VideoGen__C7F2934BCC3E755B");
+            entity.HasKey(e => e.IdVideoGenerado).HasName("PK__VideoGen__C7F2934BD51D0235");
 
-            entity.Property(e => e.IdVideoGenerado).ValueGeneratedNever();
             entity.Property(e => e.Estado).HasMaxLength(20);
             entity.Property(e => e.FechaCreacion)
                 .HasDefaultValueSql("(getdate())")
