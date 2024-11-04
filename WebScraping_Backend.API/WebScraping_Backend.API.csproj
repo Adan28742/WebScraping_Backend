@@ -10,4 +10,9 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\WebScraping_Backend.Core\WebScraping_Backend.Core.csproj" />
+    <ProjectReference Include="..\WebScraping_Backend.Infrastructure\WebScraping_Backend.Infrastructure.csproj" />
+  </ItemGroup>
+
 </Project>
