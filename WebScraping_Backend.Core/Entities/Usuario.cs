@@ -13,7 +13,7 @@ public partial class Usuario
 
     public string Apellidos { get; set; } = null!;
 
-    public DateOnly? FechaNacimiento { get; set; }
+    public DateTime? FechaNacimiento { get; set; }
 
     public string Email { get; set; } = null!;
 
