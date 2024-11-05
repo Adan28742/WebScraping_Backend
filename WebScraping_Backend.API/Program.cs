@@ -19,6 +19,8 @@ builder
 
 builder.Services.AddTransient<ICategoriaRepository, CategoriaRepository>();
 builder.Services.AddTransient<ICategoriaService, CategoriaService>();
+builder.Services.AddTransient<ITipoUsuarioRepository, TipoUsuarioRepository>();
+builder.Services.AddTransient<ITipoUsuarioService, TipoUsuarioService>();
 
 
 builder.Services.AddControllers();
