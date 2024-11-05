@@ -16,6 +16,6 @@ public partial class VideoGenerado
     public int? Duracion { get; set; }
 
     public virtual Categoria? IdCategoriaNavigation { get; set; }
-
+    
     public virtual ICollection<ListaGuardado> ListaGuardado { get; set; } = new List<ListaGuardado>();
 }
