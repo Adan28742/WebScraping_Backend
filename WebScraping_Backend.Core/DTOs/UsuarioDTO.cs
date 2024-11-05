@@ -22,7 +22,7 @@ namespace WebScraping_Backend.Core.DTOs
 
         public string Password { get; set; } = null!;
 
-        public string? Estado { get; set; }
+        public bool? Estado { get; set; }
 
         public DateTime? FechaCreacion { get; set; }
 
@@ -45,7 +45,7 @@ namespace WebScraping_Backend.Core.DTOs
 
         public string Password { get; set; } = null!;
 
-        public string? Estado { get; set; }
+        public bool? Estado { get; set; }
 
         public DateTime? FechaCreacion { get; set; }
 
@@ -82,7 +82,7 @@ namespace WebScraping_Backend.Core.DTOs
 
         public string Password { get; set; } = null!;
 
-        public string? Estado { get; set; }
+        public bool? Estado { get; set; }
 
         public DateTime? FechaCreacion { get; set; }
 
@@ -106,7 +106,7 @@ namespace WebScraping_Backend.Core.DTOs
 
         public string Password { get; set; } = null!;
 
-        public string? Estado { get; set; }
+        public bool? Estado { get; set; }
 
         public DateTime? FechaCreacion { get; set; }
 

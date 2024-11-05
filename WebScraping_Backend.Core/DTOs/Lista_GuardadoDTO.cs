@@ -15,7 +15,7 @@ namespace WebScraping_Backend.Core.DTOs
 
         public DateTime? FechaCreacion { get; set; }
 
-        public string? Estado { get; set; }
+        public bool? Estado { get; set; }
 
         public int? IdTipoGuardado { get; set; }
 
@@ -29,7 +29,7 @@ namespace WebScraping_Backend.Core.DTOs
 
         public DateTime? FechaCreacion { get; set; }
 
-        public string? Estado { get; set; }
+        public bool? Estado { get; set; }
 
         public int? IdTipoGuardado { get; set; }
 

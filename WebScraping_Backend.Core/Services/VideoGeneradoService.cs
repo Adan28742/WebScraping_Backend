@@ -26,7 +26,8 @@ namespace WebScraping_Backend.Core.Services
                 var videogeneradoDTO = new VideoGeneradoDTO();
                 videogeneradoDTO.IdVideoGenerado = videogenerado.IdVideoGenerado;
                 videogeneradoDTO.IdCategoria = videogenerado.IdCategoria;
-                videogeneradoDTO.FechaCreacion = videogenerado.FechaCreacion; 
+                videogeneradoDTO.FechaCreacion = videogenerado.FechaCreacion;
+                videogeneradoDTO.LinkVideo = videogenerado.LinkVideo;
                 videogeneradoDTO.Estado = videogenerado.Estado;
                 videogeneradoDTO.Duracion = videogenerado.Duracion;
 
@@ -48,6 +49,7 @@ namespace WebScraping_Backend.Core.Services
                 IdVideoGenerado = videogenerado.IdVideoGenerado,
                 IdCategoria = videogenerado.IdCategoria,
                 FechaCreacion = videogenerado.FechaCreacion,
+                LinkVideo = videogenerado.LinkVideo,
                 Estado = videogenerado.Estado,
                 Duracion = videogenerado.Duracion,
             };
@@ -58,6 +60,7 @@ namespace WebScraping_Backend.Core.Services
             var videogenerado = new VideoGenerado();
             videogenerado.IdCategoria = videogeneradoInsertDTO.IdCategoria;
             videogenerado.FechaCreacion = videogeneradoInsertDTO.FechaCreacion;
+            videogenerado.LinkVideo = videogeneradoInsertDTO.LinkVideo;
             videogenerado.Estado = videogeneradoInsertDTO.Estado;
             videogenerado.Duracion = videogeneradoInsertDTO.Duracion;
 
@@ -71,6 +74,7 @@ namespace WebScraping_Backend.Core.Services
                 return false;
             videogenerado.IdCategoria = videogeneradoDTO.IdCategoria;
             videogenerado.FechaCreacion = videogeneradoDTO.FechaCreacion;
+            videogenerado.LinkVideo = videogeneradoDTO.LinkVideo;
             videogenerado.Estado = videogeneradoDTO.Estado;
             videogenerado.Duracion = videogeneradoDTO.Duracion;
 

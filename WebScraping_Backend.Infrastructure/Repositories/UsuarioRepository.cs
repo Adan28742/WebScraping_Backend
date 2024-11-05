@@ -63,7 +63,7 @@ namespace WebScraping_Backend.Infrastructure.Repositories
         {
             var user = await _context
                 .Usuario
-                .Where(x => x.Email == email && x.Password == contraseña && x.Estado == "1").FirstOrDefaultAsync();
+                .Where(x => x.Email == email && x.Password == contraseña && x.Estado == true).FirstOrDefaultAsync();
             if (user == null)
             {
                 return null;
@@ -90,7 +90,7 @@ namespace WebScraping_Backend.Infrastructure.Repositories
                 return false;
             }
             usuario.UltimoAcceso = ultimoAcceso;
-            return await Update(usuario); // Suponiendo que `Update` es el método que guarda cambios en la base de datos.
+            return await Update(usuario);
         }
 
     }

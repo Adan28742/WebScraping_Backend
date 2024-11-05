@@ -19,7 +19,7 @@ public partial class Usuario
 
     public string Password { get; set; } = null!;
 
-    public string? Estado { get; set; }
+    public bool? Estado { get; set; }
 
     public DateTime? FechaCreacion { get; set; }
 

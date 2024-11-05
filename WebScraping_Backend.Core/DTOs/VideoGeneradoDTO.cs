@@ -15,7 +15,9 @@ namespace WebScraping_Backend.Core.DTOs
 
         public DateTime? FechaCreacion { get; set; }
 
-        public string? Estado { get; set; }
+        public string? LinkVideo { get; set; }
+
+        public bool? Estado { get; set; }
 
         public int? Duracion { get; set; }
 
@@ -27,7 +29,9 @@ namespace WebScraping_Backend.Core.DTOs
 
         public DateTime? FechaCreacion { get; set; }
 
-        public string? Estado { get; set; }
+        public string? LinkVideo { get; set; }
+
+        public bool? Estado { get; set; }
 
         public int? Duracion { get; set; }
 

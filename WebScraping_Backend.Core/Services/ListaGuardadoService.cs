@@ -24,8 +24,8 @@ namespace WebScraping_Backend.Core.Services
             foreach (var listaguardado in listasguardados)
             {
                 var listaguardadoDTO = new Lista_GuardadoDTO();
-                listaguardadoDTO.IdVideoGenerado = listaguardado.IdVideoGenerado;
-                listaguardadoDTO.IdUsuario = listaguardado.IdUsuario;
+                listaguardadoDTO.IdVideoGenerado = (int)listaguardado.IdVideoGenerado;
+                listaguardadoDTO.IdUsuario = (int)listaguardado.IdUsuario;
                 listaguardadoDTO.FechaCreacion = listaguardado.FechaCreacion;
                 listaguardadoDTO.Estado = listaguardado.Estado;
                 listaguardadoDTO.IdTipoGuardado = listaguardado.IdTipoGuardado;
@@ -45,8 +45,8 @@ namespace WebScraping_Backend.Core.Services
 
             var listaguardadoDTO = new Lista_GuardadoDTO()
             {
-                IdVideoGenerado = listaguardado.IdVideoGenerado,
-                IdUsuario = listaguardado.IdUsuario,
+                IdVideoGenerado = (int)listaguardado.IdVideoGenerado,
+                IdUsuario = (int)listaguardado.IdUsuario,
                 FechaCreacion = listaguardado.FechaCreacion,
                 Estado = listaguardado.Estado,
                 IdTipoGuardado = listaguardado.IdTipoGuardado,
