@@ -27,6 +27,8 @@ builder.Services.AddTransient<ILista_GuardadoRepository, ListaGuardadoRepository
 builder.Services.AddTransient<ILista_GuardadoService, ListaGuardadoService>();
 builder.Services.AddTransient<IUsuarioRepository, UsuarioRepository>();
 builder.Services.AddTransient<IUsuarioService, UsuarioService>();
+builder.Services.AddTransient<ITipoGuardadoRepository, TipoGuardadoRepository>();
+builder.Services.AddTransient<ITipoGuardadoService, TipoGuardadoService>();
 
 
 
